@@ -17,6 +17,8 @@ import java.util.Arrays;
 		Merge: O(n) each time, log(n) merge in total -> O(nlogn)
 	Space complexity: O(n) copy array
 					  O(logn) call stack
+
+	Merge Sort is available for external sort: sort each chunk that fits in RAM, and merge chunks together
 	
 */
 
