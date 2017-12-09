@@ -22,12 +22,21 @@ import java.util.Arrays;
 
 public class MergeSort {
 	public static void main(String[] args) {
-		int[] A = new int[]{5,3,4,7,2,1,6};
+		int[] A = null;
 		MergeSort.mergeSort(A);
-		for (int n : A) {
-			System.out.print(n + " ");
-		}
-		System.out.println();
+		System.out.println(Arrays.toString(A));
+
+		A = new int[]{1,2,3,4,5};
+		MergeSort.mergeSort(A);
+		System.out.println(Arrays.toString(A));
+
+		A = new int[]{5,4,3,2,1};
+		MergeSort.mergeSort(A);
+		System.out.println(Arrays.toString(A));
+
+		A = new int[]{5,3,4,7,2,1,6};
+		MergeSort.mergeSort(A);
+		System.out.println(Arrays.toString(A));
 	}
 	public static void mergeSort(int[] A) {
 		if (A == null || A.length == 0) {
